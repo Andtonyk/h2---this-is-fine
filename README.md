@@ -95,14 +95,13 @@ Alla on listattuna ohjeistuksen mukaisesti kuvatut kansiot sekä niissä oletuks
 
 ###E - Grep
 
-Esimerkki 1 - journalctl haku, jossa lokitusta rajoitettaisiin termillä "daemon".
+Esimerkki 1 - Journalctl haku, jossa lokitusta rajoitettaisiin termillä "daemon".
 
 ![Putki esimerkki](https://github.com/Andtonyk/h1---Debian/assets/149326156/085b2555-c29d-4690-86ef-9f2724fcc827)
 
-Esimerkki 2 -
+Esimerkki 2 - Grepillä voi siis tutkia jotain yksittäistä termiä, ilmoitusta tai jopa lyhyempiä sarjoja
 
-
-Esimerkki 3 - 
+![grep sudo](https://github.com/Andtonyk/h1---Debian/assets/149326156/74445152-3d64-4220-827a-549881040678)
 
 
 ###F - Esimerkki putkesta
@@ -113,3 +112,9 @@ Putki mahdollistaa lisäkomentojen syöttämisen toisen komennon osaksi. Tässä
 
 
 ###G - Esimerkki lokeista
+
+Tässä on lyhyt otos micron onnistuneesta asennuksesta
+![loki - micron asennus](https://github.com/Andtonyk/h1---Debian/assets/149326156/892e5965-c4b3-4fa0-b3bf-e6882a68d6d5)
+
+Tässä on loki otos satunnaisesta virheilmoituksesta (haussa käytetty rajoitteena aineistosta grep error-tyyppistä komentoa).
+![loki - virheestä](https://github.com/Andtonyk/h1---Debian/assets/149326156/49756e65-85dc-4438-b7f4-20cd25ba90bd)
