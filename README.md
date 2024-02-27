@@ -80,6 +80,7 @@ Alla on listattuna ohjeistuksen mukaisesti kuvatut kansiot sekä niissä oletuks
 ![cd home](https://github.com/Andtonyk/h1---Debian/assets/149326156/1ac1ced8-8480-415b-969c-6b3e865c3a63)
 
 /home/käyttäjä/ - Kansio joka sisältää käyttäjän pohjalta muodostetun kansio rakenteen ja johon pääasiallisesti tietojen ja kansioiden lisääminen kohdistuu
+
 ![cd kayttaja](https://github.com/Andtonyk/h1---Debian/assets/149326156/a39c95c2-e23a-49b5-80da-c6e8ba73db91)
 
 /etc/ - Mahdollistaa dynaamisen liikkuvuuden eri kansioiden ja niissä olevien teksti-tiedostojen välillä
