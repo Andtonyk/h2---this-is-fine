@@ -3,28 +3,28 @@ Tehtävä H2 - Kaikki testit on toteuttu seuraavanlaisella koneella: Windows 10 
 # H2 - Komentoja ja asennata
 # Terminal komentojen lyhyen kertauksen oppimäärä
 
-##Komentoja komentojen perään
+## Komentoja komentojen perään
 
-###Liikkuminen
+### Liikkuminen
 
 Muistettavien komentojen sivulla on erittäin kattava lista komentoja, joiden avulla on mahdollista päästä etenemään tehokkaasti Linuxin terminaali-ympäristössä.
  Lyhyesti liikkumisen voidaan ajatella toteutuvan cd-komennolla, sijainnin tarkistaminen pwd-komennolla ja sijainnissa olevan sisällön tarkistaminen ls-komennolla.
 
 Jo pelkästään nämä antavat hyvät peruslähtökohdat terminaali-ympäristössä toimimiseen.
 
-###Sisällön muodostaminen
+### Sisällön muodostaminen
 
 Tämän lisäksi on kriittistä osata muodostaa uusia kansioita mkdir-komennolla.
 
 Itse sisällöllisessä tuotannossa on hyvä muistaa nono tai micro kohde kansiossa ja sen jälkeen halutun tiedostonimen ja tyypin muodostaminen. Tällöin pystyy tekstieditorin kautta muodostamaan haluttua materiaalia, halutussa editorissa. 
 
-###Siirtäminen ja uudelleen nimeäminen
+### Siirtäminen ja uudelleen nimeäminen
 
 Siirtäminen onnistuu mv-komennolla. Tässä on tärkeää huomioida toiminta tapa mv SIIRRETTÄVÄN TIEDOSTON/KANSION NIMI UUDEN KANSION SIJAINTI/.
 Uudelleen nimeäminen onnistuu sekin mv-komennolla, mutta tällöin komentoa määrittää mv VANHANIMI UUSINIMI, eli ensin tulee syöttää vanhan kohteen nimi ja sitten uuden. 
 Huom! Jos uutta nimeä ei ole olemassa, nimetään vanhan nimen kohdassa oleva tiedosto uuden mukaiseksi
 
-##SUDO
+## SUDO
 
 Liikkumiseen liittyvien komentojen lisälsi tärkein käytössä oleva komento, joka mahdollistaa kaikki kriittisimmät toimet.
 sudo apt-get update... yleinen päivitys komento
@@ -33,7 +33,7 @@ sudo apt-get install ohjelman nimi... yleinen asennus komento
 sudoedit muutettava kohde... yleinen muokkaus komento
 sudo nano tai micro ja muodostettavan kohteen nimi... yleinen uuden tekstiä sisältävän kohteen muodostus komento
 
-##Loppu huomiot
+## Loppu huomiot
 
 Linuxissa tarvitaan loppujen lopuksi suhteelisen vähän komentoja, jotta sillä saadaan tehtyä monimutkaisiakin asioita onnistuneesti. 
 Isoimmaksi vaikuttajaksi muodostuukin se, että komentoja tulisi osa käyttää oikeissa paikoissa, oikeaan aikaan. Asia joka on ratkaistavissa ainoastaan tekemällä
@@ -41,13 +41,13 @@ Isoimmaksi vaikuttajaksi muodostuukin se, että komentoja tulisi osa käyttää 
 #H2-asennusta ja testausta
 
 
-###A - Micro
+### A - Micro
 
 Micron saa asetettua testikoneelle syöttämällä terminaalissa sudo apt-get install micro.
 Asennus vahvistataan syöttämällä y- sitä kysyttäessä. Jos tätä kohtaa ei haluttaisi tehdä manuaalisesti, olisi syötettävä komento sudo apt-get -y install micro.
 
 
-###B - Laitteisto
+### B - Laitteisto
 
 ![lshw](https://github.com/Andtonyk/h1---Debian/assets/149326156/f0197fdc-0aad-4e45-aa9b-950994ded88c)
 
@@ -55,7 +55,7 @@ Lshw-listaa käytettävän raudan, alkaen alustasta ja muistista. Muisti näkyy 
 Lshw-siis listaa ositukset käyttäen VM:n muodostamaa tietoa ja koneen omaa listattua raudallista tietoa, riippuen mistä se kyseisen tiedon saa.
 
 
-###C - Apt ja Get
+### C - Apt ja Get
 
 Yksittäisen ohjelmiston asentaminen toteutetaan syöttämällä sudo apt-get install ohjelma ja painamalla tämän jälkeen Enter-näppäintä.
 Hankin koneelleni Micro sekä Nano editointiohjelmat.
@@ -69,7 +69,7 @@ Useamman ohjelmiston asentaminen toteutettaisiin komentomuodolla sudo apt-get in
 Eli pelkkä väli halutun ohjelmiston jälkeen riittää erottamaan ne toisistaan asentamista varten.
 
 
-###D - Tärkeät kansiot
+### D - Tärkeät kansiot
 
 Alla on listattuna ohjeistuksen mukaisesti kuvatut kansiot sekä niissä oletuksellisesti olevat tiedostot.
 
@@ -93,7 +93,7 @@ Alla on listattuna ohjeistuksen mukaisesti kuvatut kansiot sekä niissä oletuks
 ![cd var log](https://github.com/Andtonyk/h1---Debian/assets/149326156/0c54409c-b594-46bd-a7b2-2d169093280b)
 
 
-###E - Grep
+### E - Grep
 
 Esimerkki 1 - Journalctl haku, jossa lokitusta rajoitettaisiin termillä "daemon".
 
@@ -104,14 +104,14 @@ Esimerkki 2 - Grepillä voi siis tutkia jotain yksittäistä termiä, ilmoitusta
 ![grep sudo](https://github.com/Andtonyk/h1---Debian/assets/149326156/74445152-3d64-4220-827a-549881040678)
 
 
-###F - Esimerkki putkesta
+### F - Esimerkki putkesta
 
 ![Putki esimerkki](https://github.com/Andtonyk/h1---Debian/assets/149326156/085b2555-c29d-4690-86ef-9f2724fcc827)
 
 Putki mahdollistaa lisäkomentojen syöttämisen toisen komennon osaksi. Tässä esimerkissä journalctlstä saadaan putkitetun grepin kautta asetettua haullisia rajoittajia.
 
 
-###G - Esimerkki lokeista
+### G - Esimerkki lokeista
 
 Tässä on lyhyt otos micron onnistuneesta asennuksesta
 ![loki - micron asennus](https://github.com/Andtonyk/h1---Debian/assets/149326156/892e5965-c4b3-4fa0-b3bf-e6882a68d6d5)
